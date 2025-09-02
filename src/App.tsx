@@ -20,6 +20,7 @@ import AdminDashboard from './pages/Admin/AdminDashboard';
 import AdminUsersPage from './pages/Admin/AdminUsersPage';
 import AdminCoursesPage from './pages/Admin/AdminCoursesPage';
 import AdminPaymentsPage from './pages/Admin/AdminPaymentsPage';
+import AdvancedFeaturesPage from './pages/AdvancedFeaturesPage';
 import ProtectedRoute from './components/Auth/ProtectedRoute';
 import { useAuth } from './contexts/AuthContext';
 
@@ -36,6 +37,7 @@ function AppContent() {
           <Route path="/courses" element={<CoursesPage />} />
           <Route path="/courses/:id" element={<CourseDetailPage />} />
           <Route path="/leaderboard" element={<LeaderboardPage />} />
+          <Route path="/features" element={<AdvancedFeaturesPage />} />
           <Route path="/login" element={user ? <Navigate to="/dashboard" /> : <LoginPage />} />
           <Route path="/register" element={user ? <Navigate to="/dashboard" /> : <RegisterPage />} />
 

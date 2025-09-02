@@ -36,6 +36,7 @@ export default function Header() {
       return [
         { name: 'Home', path: '/' },
         { name: 'Courses', path: '/courses' },
+        { name: 'Features', path: '/features' },
         { name: 'Leaderboard', path: '/leaderboard' },
       ];
     }
@@ -45,6 +46,7 @@ export default function Header() {
         return [
           { name: 'Home', path: '/' },
           { name: 'Courses', path: '/courses' },
+          { name: 'Features', path: '/features' },
           { name: 'My Courses', path: '/my-courses' },
           { name: 'Dashboard', path: '/dashboard' },
           { name: 'Leaderboard', path: '/leaderboard' },

@@ -12,7 +12,7 @@ import {
   TrendingUp,
   Globe,
   Shield,
-  Zap,
+  Zap, 
   X
 } from 'lucide-react';
 
@@ -105,13 +105,13 @@ export default function HomePage() {
                 >
                   Start Learning Now
                 </Link>
-                <button
-                  onClick={() => setShowDemo(true)}
+                <Link
+                  to="/features"
                   className="border-2 border-white/30 text-white px-8 py-4 rounded-xl font-semibold hover:bg-white/10 transition-all duration-200 flex items-center justify-center space-x-2"
                 >
-                  <Play className="h-5 w-5" />
-                  <span>Watch Demo</span>
-                </button>
+                  <Zap className="h-5 w-5" />
+                  <span>Explore Features</span>
+                </Link>
               </div>
 
               {user && (
